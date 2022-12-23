@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Arsha</title>
+    <style>
+        .navbar {
+            background: #37517e;
+        }
+
+        .home {
+            color: #47b2e4;
+        }
+
+        .li {
+            cursor: pointer;
+        }
+
+        .li:hover {
+            color: #47b2e4;
+            transition: 0.3s;
+        }
+
+        .btn-outline {
+            border-width: 2px;
+            color: white;
+        }
+
+        .after-navbar {
+            min-height: 70vh;
+            background: #37517e;
+        }
+
+        .play:hover {
+            color: #47b2e4;
+            transition: 0.5s;
+
+        }
+
+        /* .hero-img {
+            animation: up-down 2s ease-in-out infinite alternate-reverse both;
+            ;
+        } */
+
+        .client-section {
+            background-color: #f3f5fa;
+        }
+
+        .client-img {
+            height: 40px;
+            color: inverted;
+            filter: grayscale(100%);
+        }
+
+        .client-img:hover {
+            filter: grayscale(0%);
+            transition: all 0.3s ease-in;
+        }
+
+        .check,
+        .card-ico-col {
+            color: #47b2e4;
+        }
+
+        .about-h2,
+        .acc-h2,
+        .skill-h2,
+        .progress-col,
+        .service-h2,
+        .card-h5,
+        .faq-h2,
+        .contact-h4,
+        .footer-h3,
+        .footer-h6,
+        .team-h5,
+        .team-social {
+            color: #37517e;
+        }
+
+        /* .card-h5 {
+            cursor: pointer !important;
+        } */
+
+
+        .why-us-left {
+            padding: 50px 80px 80px 125px;
+        }
+
+        .acc-sec,
+        .services-sec,
+        .faq-sec {
+            background: #f3f5fa;
+        }
+
+        .progress-col2 {
+            background-color: #37517e;
+        }
+
+        .card-h5:hover {
+            color: #47b2e4;
+            transition: all 0.5s;
+        }
+
+        .cta-box {
+            padding: 100px 100px 100px 100px;
+        }
+
+        .cta-btn:hover {
+            background-color: #47b2e4;
+            transition: all 0.3s ease-in;
+        }
+
+        .cta-sec {
+            background: rgba(40, 58, 90, 0.9);
+            color: white;
+
+        }
+
+        .cta-sec::before {
+            opacity: 0.5;
+            background-image: url('/cta-bg.jpg');
+            /* z-index: 1; */
+        }
+
+        .contact-ico,
+        .arrow-ico {
+            color: #47b2e4;
+        }
+
+        .form-btn {
+            border: none;
+            background: #47b2e4;
+            color: white;
+        }
+
+        .contact-border {
+            border-top: 3px solid #47b2e4;
+            border-bottom: 3px solid #47b2e4;
+        }
+
+        .footer-links {
+            text-decoration: none;
+            color: grey;
+        }
+
+        .social-ico,
+        .myname-color {
+            color: #47b2e4;
+        }
+
+        .footer-btm {
+            background-color: #37517e;
+            color: white;
+        }
+
+        .team-social:hover {
+            cursor: pointer;
+            color: #47b2e4;
+            transition: all 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="container-fluid">
+        <div class="row navbar">
+            <div class="col-lg-5 float-right text-light">
+                <div class="row text-lg-start text-md-center text-sm-center text-center">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8 fs-2">ARSHA</div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12 text-lg-start text-md-center text-sm-center text-center">
+                <div class="row text-light ul">
+                    <div class="col-lg-1 my-2 li home">Home</div>
+                    <div class="col-lg-1 my-2 li">About</div>
+                    <div class="col-lg-1 my-2 li">Services</div>
+                    <div class="col-lg-1 my-2 li mx-3 mx-md-0">Portfolio</div>
+                    <div class="col-lg-1 my-2 li">Team</div>
+                    <div class="col-lg-2 my-2 li">Drop Down</div>
+                    <div class="col-lg-1 my-2 li">Contact</div>
+                    <div class="col-lg-3">
+                        <button type="button" class="btn btn-outline mx-2 btn-outline-primary rounded-pill fw-bold">Get
+                            Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- After Navbar -->
+    <div class="container-fluid after-navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mt-5 ">
+                    <h1 class="text-white fw-bold mt-5">Better Solutions For</h1>
+                    <h1 class="text-white fw-bold">Your Business</h1>
+                    <h2 class="text-secondary">We are team of talented designers making websites with Bootstrap</h2>
+                    <div class="row mt-5">
+                        <div class="col-lg-3">
+                            <button type="button" class="btn btn-primary rounded-pill">Get Started</button>
+                        </div>
+                        <div class="col-lg-5 text-light fs-5"><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                                height="30" fill="currentColor" class="bi bi-play-circle play" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
+                            </svg>
+                            Watch Video
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col">
+                            <img src="/hero-img.png" alt="hero" class="img-fluid hero-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- client Section -->
+    <div class="container-fluid client-section">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-lg-2 col-md-4 col-sm-6 col-6 my-sm-3 my-md-3"><img src="/client-1.png" alt="client-1"
+                        class="img-fluid client-img">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-6 my-sm-3 my-md-3"><img src="/client-2.png" alt="client-1"
+                        class="img-fluid client-img">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-6 my-sm-3 my-md-3"><img src="/client-3.png" alt="client-1"
+                        class="img-fluid client-img">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-6 my-sm-3 my-md-3"><img src="/client-4.png" alt="client-1"
+                        class="img-fluid client-img">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-6 my-sm-3 my-md-3"><img src="/client-5.png" alt="client-1"
+                        class="img-fluid client-img">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-6 my-sm-3 my-md-3"><img src="/client-6.png" alt="client-1"
+                        class="img-fluid client-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="container">
+        <div class="row mt-5">
+            <h2 class="text-center fw-bold about-h2">ABOUT US
+                <hr style="width:10%;" class="mx-auto">
+            </h2>
+        </div>
+        <div class="row mt-3 mb-5">
+            <!-- half column of about us -->
+            <div class="col-lg-6">
+                <!-- 1st para -->
+                <div class="row">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua.</p>
+                </div>
+                <!-- 1st check and its content -->
+                <div class="row mb-1">
+                    <div class="col-12"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" class="bi bi-check-all check" viewBox="0 0 16 16">
+                            <path
+                                d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                        </svg>
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                </div>
+                <!-- 2nd check and its content -->
+                <div class="row mb-1">
+                    <div class="col-12"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" class="bi bi-check-all check" viewBox="0 0 16 16">
+                            <path
+                                d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                        </svg>
+                        Duis aute irure dolor in reprehenderit in voluptate velit.
+                    </div>
+                </div>
+                <!-- 3rd check and its content -->
+                <div class="row mb-1">
+                    <div class="col-12"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" class="bi bi-check-all check" viewBox="0 0 16 16">
+                            <path
+                                d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                        </svg>
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd half column of about us -->
+            <div class="col-lg-6">
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button type="button" class="btn btn-outline-primary py-2 px-4">Learn More</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Accordian Section -->
+    <div class="container-fluid acc-sec">
+        <div class="row">
+            <div class="col-lg-6 why-us-left">
+                <h2 class="acc-h2">Eum ipsam laborum deleniti <b>velit pariatur architecto aut nihil</b></h2>
+                <!-- Accordian -->
+                <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
+                    <div class="accordion-item my-2">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Non consectetur a erat nam at lectus urna duis?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the .accordion-flush class. This is the first item's accordion body.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item my-2">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Feugiat scelerisque varius morbi enim nunc?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the .accordion-flush class. This is the second item's accordion body. Let's
+                                imagine this being filled with some actual content.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item my-2">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Dolor sit amet consectetur adipiscing elit?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Eleifend mi in nulla posuere sollicitudin aliquam ultrices
+                                sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit
+                                amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis
+                                convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 pt-4">
+                <img src="/why-us.png" alt="why-us" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- Skillls Section -->
+    <div class="container-fluid">
+        <div class="container my-5">
+            <div class="row">
+                <!-- skills image -->
+                <div class="col-lg-6">
+                    <img src="/skills.png" alt="skills" class="img-fluid">
+                </div>
+                <!-- skills progress bar and all -->
+                <div class="col-lg-6">
+                    <div class="row">
+                        <h2 class="skill-h2 fw-bold">Voluptatem dignissimos provident quasi corporis voluptates</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                    <h6 class="float-start progress-col">HTML</h6>
+                    <h6 class="float-right text-end progress-col">100%</h6>
+                    <div class="progress clear-fix">
+                        <div class="progress-bar progress-col2" role="progressbar" style="width: 100%"
+                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="row mt-3"></div>
+                    <h6 class="float-start progress-col">CSS</h6>
+                    <h6 class="float-right text-end progress-col">90%</h6>
+                    <div class="progress clear-fix">
+                        <div class="progress-bar progress-col2" role="progressbar" style="width: 90%" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="row mt-3"></div>
+                    <h6 class="float-start progress-col">JAVASCRIPT</h6>
+                    <h6 class="float-right text-end progress-col">75%</h6>
+                    <div class="progress clear-fix">
+                        <div class="progress-bar progress-col2" role="progressbar" style="width: 75%" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="row mt-3"></div>
+                    <h6 class="float-start progress-col">PHOTOSHOP</h6>
+                    <h6 class="float-right text-end progress-col">55%</h6>
+                    <div class="progress clear-fix">
+                        <div class="progress-bar progress-col2" role="progressbar" style="width: 55%" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="container-fluid services-sec">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center fw-bold service-h2 mt-5">Services</h1>
+                <hr style="width:10%;" class="mx-auto">
+                <p class="text-center">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga
+                    eum quidem. Sit sint
+                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+                    fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+            <!-- cards row -->
+            <div class="row mt-3 pb-5">
+                <div class="col my-md-3 my-sm-3">
+                    <div class="card" style="width: 15rem; min-height: 15.6rem;">
+                        <div class="card-body">
+                            <i class="fa-solid fa-basketball fs-2 mt-4 card-ico-col"></i>
+                            <h5 class="card-title mt-4 card-h5">Lorem Ipsum</h5>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the
+                                bulk of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-md-3 my-sm-3">
+                    <div class="card" style="width: 15rem; min-height: 15.6rem;">
+                        <div class="card-body">
+                            <i class="fa-solid fa-file-contract fs-2 mt-4 card-ico-col"></i>
+                            <h5 class="card-title mt-4 card-h5">Sed ut perspici</h5>
+                            <p class="card-text mt-3">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-md-3 my-sm-3">
+                    <div class="card" style="width: 15rem; min-height: 15.6rem;">
+                        <div class="card-body">
+                            <i class="fa-solid fa-gauge fs-2 mt-4 card-ico-col"></i>
+                            <h5 class="card-title mt-4 card-h5">Magni Dolores</h5>
+                            <p class="card-text mt-3">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-md-3 my-sm-3">
+                    <div class="card" style="width: 15rem; min-height: 15.6rem;">
+                        <div class="card-body">
+                            <i class="fa-solid fa-layer-group fs-2 mt-4 card-ico-col"></i>
+                            <h5 class="card-title mt-4 card-h5">Nemo Enim</h5>
+                            <p class="card-text mt-3">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                blanditiis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to action Section -->
+    <div class="container-fluid cta-sec">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="mt-5 fw-bold">Call to Action</h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id
+                        est
+                        laborum.</p>
+                </div>
+                <div class="col-lg-4 cta-box text-center">
+                    <button type="button"
+                        class="btn btn-outline-primary btn-lg rounded-pill fw-bold border-light text-light cta-btn">Call
+                        To
+                        Action</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div class="container-fluid services-sec">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center fw-bold service-h2 mt-5">PORTFOLIO</h1>
+                <hr style="width:10%;" class="mx-auto">
+                <p class="text-center">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga
+                    eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
+                    suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+            <!-- photos row -->
+            <div class="row my-2">
+                <div class="col-lg-4 col-md-6">
+                    <div class="row my-4">
+                        <img src="/app1.jpg" alt="app1" class="img-fluid">
+                    </div>
+                    <div class="row my-4">
+                        <img src="/app2.jpg" alt="app2" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="row my-4">
+                        <img src="/app5.jpg" alt="app5" class="img-fluid">
+                    </div>
+                    <div class="row my-4">
+                        <img src="/app4.jpg" alt="app4" class="img-fluid">
+                    </div>
+                    <div class="row my-4">
+                        <img src="/app3.jpg" alt="app3" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row my-4">
+                        <img src="/app6.jpg" alt="app6" class="img-fluid">
+                    </div>
+                    <div class="row my-4">
+                        <img src="/app7.jpg" alt="app7" class="img-fluid">
+                    </div>
+                    <div class="row my-4">
+                        <img src="/app8.jpg" alt="app8" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="faq-h2 fw-bold text-center">TEAM</h2>
+                <hr style="width:10%;" class="mx-auto">
+                <p class="text-center">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga
+                    eum
+                    quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+                    alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+            <!-- Team members -->
+            <div class="row">
+                <!-- Team Member-1 -->
+                <div class="col-lg-5 mx-3">
+                    <div class="row py-2 border">
+                        <div class="col-4 pt-2">
+                            <img src="/team-1.jpg" alt="team1" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="col-8 py-2 px-3">
+                            <h5 class="fw-bold team-h5">Walter White</h5>
+                            <span>Chief Executive Officer</span>
+                            <hr style="width: 20%;">
+                            <span>Explicabo voluptatem mollitia et repellat qui dolorum quasi</span>
+                            <div class="row mt-2 ms-1">
+                                <div class="col-1 me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-twitter team-social" viewBox="0 0 16 16">
+                                        <path
+                                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                    </svg>
+                                </div>
+                                <div class="col-1 me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-facebook team-social" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                    </svg>
+                                </div>
+                                <div class="col-1 me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-instagram team-social" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                    </svg>
+                                </div>
+                                <div class="col-1 me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-linkedin team-social" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                    </svg>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member-2 -->
+                <div class="col-lg-5 mx-3">
+                    <div class="row py-2 border">
+                        <div class="col-4 pt-2">
+                            <img src="/team-2.jpg" alt="team-2" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="col-8 py-2 px-3">
+                            <h5 class="fw-bold team-h5">Charlie Jhonson</h5>
+                            <span>Product Manager</span>
+                            <hr style="width: 20%;">
+                            <span>Aut maiores voluptates amet et quis praesentium qui senda para</span>
+                            <div class="row mt-2 ms-1">
+                                <div class="col-1 me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-twitter team-social" viewBox="0 0 16 16">
+                                        <path
+                                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                    </svg>
+                                </div>
+                                <div class="col-1 me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-facebook team-social" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                    </svg>
+                                </div>
+                                <div class="col-1 me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-instagram team-social" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                    </svg>
+                                </div>
+                                <div class="col-1 me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-linkedin team-social" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                    </svg>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Team Member-3 -->
+                <div class="col-lg-5 mx-3">
+                    <div class="row py-2 border">
+                        <div class="col-4 pt-2">
+                            <img src="/team-3.jpg" alt="team-3" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="col-8 py-2 px-3">
+                            <h5 class="fw-bold team-h5">William Anderson</h5>
+                            <span>CTO</span>
+                            <hr style="width: 20%;">
+                            <span>Quisquam facilis cum velit laborum corrupti fuga rerum quia</span>
+                            <div class="row mt-2 ms-1">
+                                <div class="col-1 me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-twitter team-social" viewBox="0 0 16 16">
+                                        <path
+                                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                    </svg>
+                                </div>
+                                <div class="col-1 me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-facebook team-social" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                    </svg>
+                                </div>
+                                <div class="col-1 me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-instagram team-social" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                    </svg>
+                                </div>
+                                <div class="col-1 me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-linkedin team-social" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                    </svg>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member-4 -->
+                <div class="col-lg-5 mx-3">
+                    <div class="row py-2 border">
+                        <div class="col-4 pt-2">
+                            <img src="/team-4.jpg" alt="team-4" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="col-8 py-2 px-3">
+                            <h5 class="fw-bold team-h5">Mandel Jepson</h5>
+                            <span>Accountant</span>
+                            <hr style="width: 20%;">
+                            <span>Dolorum tempora officiis odit laborum officiis et et accusamus</span>
+                            <div class="row mt-2 ms-1">
+                                <div class="col-1 me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-twitter team-social" viewBox="0 0 16 16">
+                                        <path
+                                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                    </svg>
+                                </div>
+                                <div class="col-1 me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-facebook team-social" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                    </svg>
+                                </div>
+                                <div class="col-1 me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-instagram team-social" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                    </svg>
+                                </div>
+                                <div class="col-1 me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-linkedin team-social" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                    </svg>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQS -->
+    <div class="container-fluid faq-sec py-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="faq-h2 fw-bold text-center">FREQUENTLY ASKED QUESTIONS</h2>
+                <hr style="width:10%;" class="mx-auto">
+                <p class="text-center">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga
+                    eum
+                    quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+                    alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10">
+                    <div class="accordion" id="accordionFlushExample">
+                        <div class="accordion-item my-2">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Non consectetur a erat nam at lectus urna duis?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+                                    volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna
+                                    porttitor rhoncus dolor purus non.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item my-2">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Feugiat scelerisque varius morbi enim nunc?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Dolor sit amet consectetur adipiscing elit pellentesque
+                                    habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus
+                                    faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper
+                                    dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item my-2">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Dolor sit amet consectetur adipiscing elit?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                    demonstrate the <code>.accordion-flush</code> class. This is the third item's
+                                    accordion
+                                    body. Nothing more exciting happening here in terms of content, but just filling up
+                                    the
+                                    space to make it look, at least at first glance, a bit more representative of how
+                                    this
+                                    would
+                                    look in a real-world application.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row mt-5">
+                <h2 class="text-center fw-bold about-h2">CONTACT
+                    <hr style="width:10%;" class="mx-auto">
+                </h2>
+                <p class="text-center">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga
+                    eum quidem. Sit
+                    sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
+                    ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+            <div class="row mb-2 mt-4">
+                <!-- contact left -->
+                <div class="col-lg-4 my-md-3 p-4 contact-border">
+                    <!-- Location -->
+                    <div class="row my-4">
+                        <div class="col-lg-1 pt-3 me-3 contact-ico">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-pin-map" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z" />
+                                <path fill-rule="evenodd"
+                                    d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
+                            </svg>
+                        </div>
+                        <div class="col-lg-10">
+                            <h4 class="contact-h4">Location:</h4>
+                            <span class="text-secondary">A108 Adam Street, New York, NY 535022</span>
+                        </div>
+                    </div>
+                    <!-- Email -->
+                    <div class="row my-4">
+                        <div class="col-lg-1 pt-3 me-3 contact-ico">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                            </svg>
+                        </div>
+                        <div class="col-lg-10">
+                            <h4 class="contact-h4">Email:</h4>
+                            <span class="text-secondary">info@example.com</span>
+                        </div>
+                    </div>
+                    <!-- Call -->
+                    <div class="row my-4">
+                        <div class="col-lg-1 pt-3 me-3 contact-ico">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-phone" viewBox="0 0 16 16">
+                                <path
+                                    d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
+                                <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                            </svg>
+                        </div>
+                        <div class="col-lg-10">
+                            <h4 class="contact-h4">Call:</h4>
+                            <span class="text-secondary">info@example.com</span>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14230.92215302835!2d80.96275109328619!3d26.912045666469226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399957bc16173195%3A0x9d2f1c0029715dc6!2sGayatri%20Mandir!5e0!3m2!1sen!2sin!4v1671727078393!5m2!1sen!2sin"
+                            width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <!-- Contact Right -->
+                <div class="col-lg-7 my-md-3 ms-4 p-4 contact-border">
+                    <div class="row">
+                        <div class="col-lg-6 mb-3">
+                            <div>
+                                <label for="exampleName" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="exampleInputName">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div>
+                                <label for="exampleInputEmail1" class="form-label">Your Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="mt-1">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="mt-1">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="8"></textarea>
+                        </div>
+                    </div>
+                    <div class="text-center mt-5">
+                        <button type="button"
+                            class="btn btn-outline-primary btn-lg rounded-pill form-btn text-center">Send
+                            Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer top -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Company Info -->
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="footer-h3">ARSHA</h3>
+                    <div class="text-secondary mt-3">A108 Adam Street</div>
+                    <div class="text-secondary ">New York, NY 535022</div>
+                    <div class="text-secondary ">United States</div>
+                    <div class="text-secondary mt-3"><span class="fw-bold">Phone: </span>+1 5589 55488 55</div>
+                    <div class="text-secondary "><span class="fw-bold">Email: </span>info@example.com</div>
+                </div>
+                <!-- Useful Links -->
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="footer-h6 fw-bold">Useful Links</h6>
+                    <div class="mt-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-arrow-right-short arrow-ico" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                        </svg><a href="#" class="footer-links"><span class=""> Home</span></a>
+                    </div>
+                    <div class="my-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-arrow-right-short arrow-ico" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                        </svg><a href="#" class="footer-links"><span class=""> About Us</span></a>
+                    </div>
+                    <div class="my-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-arrow-right-short arrow-ico" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                        </svg><a href="#" class="footer-links"><span class=""> Services</span></a>
+                    </div>
+                    <div class="my-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-arrow-right-short arrow-ico" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                        </svg><a href="#" class="footer-links"><span class=""> Terms of service</span></a>
+                    </div>
+                    <div class="my-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-arrow-right-short arrow-ico" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                        </svg><a href="#" class="footer-links"><span class=""> Privacy Policy</span></a>
+                    </div>
+                </div>
+                <!-- Our Services -->
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="footer-h6 fw-bold">Our Services</h6>
+                    <div class="mt-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-arrow-right-short arrow-ico" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                        </svg><a href="#" class="footer-links"><span class=""> Web Design</span></a>
+                    </div>
+                    <div class="my-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-arrow-right-short arrow-ico" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                        </svg><a href="#" class="footer-links"><span class=""> Web Development</span></a>
+                    </div>
+                    <div class="my-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-arrow-right-short arrow-ico" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                        </svg><a href="#" class="footer-links"><span class=""> Product Management</span></a>
+                    </div>
+                    <div class="my-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-arrow-right-short arrow-ico" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                        </svg><a href="#" class="footer-links"><span class=""> Marketing</span></a>
+                    </div>
+                    <div class="my-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-arrow-right-short arrow-ico" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                        </svg><a href="#" class="footer-links"><span class=""> Graphic Design</span></a>
+                    </div>
+                </div>
+                <!-- Social Links -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="row">
+                        <h6 class="footer-h6 fw-bold">Our Social Networks</h6>
+                        <div class="mt-4">
+                            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-2 social-ico rounded-circle">
+                            <i class="fa-brands fa-square-twitter fs-1"></i>
+                        </div>
+                        <div class="col-2 social-ico rounded-circle">
+                            <i class="fa-brands fa-facebook fs-1"></i>
+                        </div>
+                        <div class="col-2 social-ico rounded-circle">
+                            <i class="fa-brands fa-instagram fs-1"></i>
+                        </div>
+                        <div class="col-2 social-ico rounded-circle">
+                            <i class="fa-brands fa-skype fs-1"></i>
+                        </div>
+                        <div class="col-2 social-ico rounded-circle">
+                            <i class="fa-brands fa-linkedin fs-1"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom  -->
+    <div class="container-fluid py-4 footer-btm">
+        <div class="container">
+            <span>© Copyright <span class="fw-bold">Arsha</span>. All Rights Reserved</span>
+            <span class="float-end">Designed by <span class="myname-color">Shivam</span></span>
+        </div>
+    </div>
+
+</body>
+
+</html>
