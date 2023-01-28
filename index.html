@@ -16,12 +16,39 @@
     <link rel="stylesheet" href="style.css">
     <title>Arsha</title>
     <style>
+        :root {
+            --theme-color: #f5cac2;
+            --secondary-color: #ed7966;
+            --third-color: #fae5df;
+        }
+
+        .primary-btn {
+            outline: 2px solid var(--secondary-color);
+
+        }
+
+        .primary-btn:hover {
+            background-color: var(--secondary-color);
+            color: white !important;
+        }
+
+        .secondary-btn {
+            background: var(--secondary-color);
+            outline: 2px solid var(--primary-color);
+        }
+
+        .secondary-btn:hover {
+            background: var(--primary-color);
+            outline: 2px solid var(--secondary-color);
+            color: black !important;
+        }
+
         .navbar {
-            background: #37517e;
+            background: var(--theme-color);
         }
 
         .home {
-            color: #47b2e4;
+            color: var(--secondary-color);
         }
 
         .li {
@@ -29,7 +56,7 @@
         }
 
         .li:hover {
-            color: #47b2e4;
+            color: var(--secondary-color);
             transition: 0.3s;
         }
 
@@ -40,11 +67,11 @@
 
         .after-navbar {
             min-height: 70vh;
-            background: #37517e;
+            background: var(--theme-color);
         }
 
         .play:hover {
-            color: #47b2e4;
+            color: var(--secondary-color);
             transition: 0.5s;
 
         }
@@ -71,7 +98,7 @@
 
         .check,
         .card-ico-col {
-            color: #47b2e4;
+            color: var(--secondary-color);
         }
 
         .about-h2,
@@ -86,7 +113,7 @@
         .footer-h6,
         .team-h5,
         .team-social {
-            color: #37517e;
+            color: var(--secondary-color);
         }
 
         /* .card-h5 {
@@ -105,11 +132,17 @@
         }
 
         .progress-col2 {
-            background-color: #37517e;
+            background-color: var(--theme-color);
         }
 
         .card-h5:hover {
-            color: #47b2e4;
+            color: black;
+            transition: all 0.5s;
+        }
+
+        .team-social:hover {
+            cursor: pointer;
+            color: black;
             transition: all 0.5s;
         }
 
@@ -117,14 +150,8 @@
             padding: 100px 100px 100px 100px;
         }
 
-        .cta-btn:hover {
-            background-color: #47b2e4;
-            transition: all 0.3s ease-in;
-        }
-
         .cta-sec {
-            background: rgba(40, 58, 90, 0.9);
-            color: white;
+            background: var(--theme-color);
 
         }
 
@@ -134,20 +161,23 @@
             /* z-index: 1; */
         }
 
-        .contact-ico,
-        .arrow-ico {
-            color: #47b2e4;
+        /* Accordian Sec */
+        .accordian:focus,
+        .accordian:active {
+            color: var(--secondary-color);
+            outline: none !important;
+            box-shadow: 0 0 0 0.25rem var(--third-color);
+            background-color: white;
         }
 
-        .form-btn {
-            border: none;
-            background: #47b2e4;
-            color: white;
+        .contact-ico,
+        .arrow-ico {
+            color: var(--secondary-color);
         }
 
         .contact-border {
-            border-top: 3px solid #47b2e4;
-            border-bottom: 3px solid #47b2e4;
+            border-top: 3px solid var(--secondary-color);
+            border-bottom: 3px solid var(--secondary-color);
         }
 
         .footer-links {
@@ -157,18 +187,17 @@
 
         .social-ico,
         .myname-color {
-            color: #47b2e4;
+            cursor: pointer;
+            color: var(--secondary-color);
+        }
+
+        .social-ico:hover {
+            color: black;
+            transition: all 0.3s ease !important;
         }
 
         .footer-btm {
-            background-color: #37517e;
-            color: white;
-        }
-
-        .team-social:hover {
-            cursor: pointer;
-            color: #47b2e4;
-            transition: all 0.5s;
+            background-color: var(--theme-color);
         }
     </style>
 </head>
@@ -177,14 +206,14 @@
     <!-- Navbar -->
     <div class="container-fluid">
         <div class="row navbar">
-            <div class="col-lg-5 float-right text-light">
+            <div class="col-lg-5 float-right text-dark">
                 <div class="row text-lg-start text-md-center text-sm-center text-center">
                     <div class="col-lg-2"></div>
-                    <div class="col-lg-8 fs-2">ARSHA</div>
+                    <div class="col-lg-8 fs-2">GUD<span style="color: var(--secondary-color);">WORK</span></div>
                 </div>
             </div>
             <div class="col-lg-7 col-md-12 text-lg-start text-md-center text-sm-center text-center">
-                <div class="row text-light ul">
+                <div class="row text-dark ul">
                     <div class="col-lg-1 my-2 li home">Home</div>
                     <div class="col-lg-1 my-2 li">About</div>
                     <div class="col-lg-1 my-2 li">Services</div>
@@ -193,7 +222,7 @@
                     <div class="col-lg-2 my-2 li">Drop Down</div>
                     <div class="col-lg-1 my-2 li">Contact</div>
                     <div class="col-lg-3">
-                        <button type="button" class="btn btn-outline mx-2 btn-outline-primary rounded-pill fw-bold">Get
+                        <button type="button" class="btn primary-btn text-dark mx-2 rounded-pill ">Get
                             Started</button>
                     </div>
                 </div>
@@ -205,15 +234,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mt-5 ">
-                    <h1 class="text-white fw-bold mt-5">Better Solutions For</h1>
-                    <h1 class="text-white fw-bold">Your Business</h1>
-                    <h2 class="text-secondary">We are team of talented designers making websites with Bootstrap</h2>
+                    <h1 class="text-dark fw-bold mt-5">Better Solutions For</h1>
+                    <h1 class="text-dark fw-bold">Your Business</h1>
+                    <h2 class="text-secondary mt-4">We are team of talented designers making websites with Bootstrap
+                    </h2>
                     <div class="row mt-5">
-                        <div class="col-lg-3">
-                            <button type="button" class="btn btn-primary rounded-pill">Get Started</button>
+                        <div class="col-3">
+                            <button type="button" class="btn secondary-btn rounded-pill text-light">Get Started</button>
                         </div>
-                        <div class="col-lg-5 text-light fs-5"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                                height="30" fill="currentColor" class="bi bi-play-circle play" viewBox="0 0 16 16">
+                        <div class="col-5 text-dark fs-5"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                fill="currentColor" class="bi bi-play-circle play" viewBox="0 0 16 16">
                                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                                 <path
                                     d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
@@ -236,22 +266,22 @@
     <div class="container-fluid client-section">
         <div class="container">
             <div class="row py-4 mx-auto">
-                <div class="col-lg-2 col-md-4 col-sm-6 col-6 my-sm-3 my-md-3 px-5 px-lg-0"><img src="client-1.png"
+                <div class="col-lg-2 col-md-4 col-sm-6 col-6 my-sm-3 my-md-3 px-5 px-lg-0 py-3"><img src="client-1.png"
                         alt="client-1" class="img-fluid client-img">
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 col-6 my-sm-3 my-md-3 px-5 px-lg-0"><img src="client-2.png"
+                <div class="col-lg-2 col-md-4 col-sm-6 col-6 my-sm-3 my-md-3 px-5 px-lg-0 py-3"><img src="client-2.png"
                         alt="client-1" class="img-fluid client-img">
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 col-6 my-sm-3 my-md-3 px-5 px-lg-0"><img src="client-3.png"
+                <div class="col-lg-2 col-md-4 col-sm-6 col-6 my-sm-3 my-md-3 px-5 px-lg-0 py-3"><img src="client-3.png"
                         alt="client-1" class="img-fluid client-img">
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 col-6 my-sm-3 my-md-3 px-5 px-lg-0"><img src="client-4.png"
+                <div class="col-lg-2 col-md-4 col-sm-6 col-6 my-sm-3 my-md-3 px-5 px-lg-0 py-3"><img src="client-4.png"
                         alt="client-1" class="img-fluid client-img">
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 col-6 my-sm-3 my-md-3 px-5 px-lg-0"><img src="client-5.png"
+                <div class="col-lg-2 col-md-4 col-sm-6 col-6 my-sm-3 my-md-3 px-5 px-lg-0 py-3"><img src="client-5.png"
                         alt="client-1" class="img-fluid client-img">
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 col-6 my-sm-3 my-md-3 px-5 px-lg-0"><img src="client-6.png"
+                <div class="col-lg-2 col-md-4 col-sm-6 col-6 my-sm-3 my-md-3 px-5 px-lg-0 py-3"><img src="client-6.png"
                         alt="client-1" class="img-fluid client-img">
                 </div>
             </div>
@@ -311,7 +341,7 @@
                 <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                     voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <button type="button" class="btn btn-outline-primary py-2 px-4">Learn More</button>
+                <button type="button" class="btn primary-btn py-2 px-4">Learn More</button>
             </div>
 
         </div>
@@ -326,7 +356,7 @@
                 <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
                     <div class="accordion-item my-2">
                         <h2 class="accordion-header" id="flush-headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button collapsed accordian" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseOne" aria-expanded="false"
                                 aria-controls="flush-collapseOne">
                                 Non consectetur a erat nam at lectus urna duis?
@@ -340,7 +370,7 @@
                     </div>
                     <div class="accordion-item my-2">
                         <h2 class="accordion-header" id="flush-headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button collapsed accordian" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                 aria-controls="flush-collapseTwo">
                                 Feugiat scelerisque varius morbi enim nunc?
@@ -355,7 +385,7 @@
                     </div>
                     <div class="accordion-item my-2">
                         <h2 class="accordion-header" id="flush-headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button collapsed accordian" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseThree" aria-expanded="false"
                                 aria-controls="flush-collapseThree">
                                 Dolor sit amet consectetur adipiscing elit?
@@ -377,7 +407,7 @@
         </div>
     </div>
 
-    <!-- Skillls Section -->
+    <!-- Skills Section -->
     <div class="container-fluid">
         <div class="container my-5">
             <div class="row">
@@ -487,7 +517,7 @@
         <div class="container pt-5">
             <div class="row">
                 <div class="col-lg-8">
-                    <h2 class="mt-5 fw-bold">Call to Action</h2>
+                    <h2 class="mt-5 mb-4 fw-bold">Call to Action</h2>
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                         pariatur.
                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
@@ -496,8 +526,7 @@
                         laborum.</p>
                 </div>
                 <div class="col-lg-4 cta-box text-center">
-                    <button type="button"
-                        class="btn btn-outline-primary btn-lg rounded-pill fw-bold border-light text-light cta-btn">Call
+                    <button type="button" class="btn primary-btn btn-lg rounded-pill fw-bold text-dark">Call
                         To
                         Action</button>
                 </div>
@@ -563,9 +592,9 @@
                     alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
             </div>
             <!-- Team members -->
-            <div class="row">
+            <div class="row justify-content-around">
                 <!-- Team Member-1 -->
-                <div class="col-lg-5 mx-3">
+                <div class="col-lg-5 mx-3 my-3">
                     <div class="row py-2 border">
                         <div class="col-4 pt-2">
                             <img src="team-1.jpg" alt="team1" class="img-fluid rounded-circle">
@@ -610,7 +639,7 @@
                     </div>
                 </div>
                 <!-- Team Member-2 -->
-                <div class="col-lg-5 mx-3">
+                <div class="col-lg-5 mx-3 my-3">
                     <div class="row py-2 border">
                         <div class="col-4 pt-2">
                             <img src="team-2.jpg" alt="team-2" class="img-fluid rounded-circle">
@@ -655,9 +684,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row justify-content-around">
                 <!-- Team Member-3 -->
-                <div class="col-lg-5 mx-3">
+                <div class="col-lg-5 mx-3 my-3">
                     <div class="row py-2 border">
                         <div class="col-4 pt-2">
                             <img src="team-3.jpg" alt="team-3" class="img-fluid rounded-circle">
@@ -702,7 +731,7 @@
                     </div>
                 </div>
                 <!-- Team Member-4 -->
-                <div class="col-lg-5 mx-3">
+                <div class="col-lg-5 mx-3 my-3">
                     <div class="row py-2 border">
                         <div class="col-4 pt-2">
                             <img src="team-4.jpg" alt="team-4" class="img-fluid rounded-circle">
@@ -765,12 +794,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-1"></div>
-                <div class="col-lg-10">
+                <div class="col-lg-12">
                     <div class="accordion" id="accordionFlushExample">
                         <div class="accordion-item my-2">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                            <h2 class="accordion-header " id="flush-headingOne">
+                                <button class="accordion-button collapsed accordian" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
                                     aria-controls="flush-collapseOne">
                                     Non consectetur a erat nam at lectus urna duis?
                                 </button>
@@ -784,8 +813,8 @@
                         </div>
                         <div class="accordion-item my-2">
                             <h2 class="accordion-header" id="flush-headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                <button class="accordion-button collapsed accordian" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                     aria-controls="flush-collapseTwo">
                                     Feugiat scelerisque varius morbi enim nunc?
                                 </button>
@@ -800,9 +829,9 @@
                         </div>
                         <div class="accordion-item my-2">
                             <h2 class="accordion-header" id="flush-headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                    aria-controls="flush-collapseThree">
+                                <button class="accordion-button collapsed accordian" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                    aria-expanded="false" aria-controls="flush-collapseThree">
                                     Dolor sit amet consectetur adipiscing elit?
                                 </button>
                             </h2>
@@ -922,8 +951,7 @@
                         </div>
                     </div>
                     <div class="text-center mt-5">
-                        <button type="button"
-                            class="btn btn-outline-primary btn-lg rounded-pill form-btn text-center">Send
+                        <button type="button" class="btn secondary-btn btn-lg rounded-pill text-light text-center">Send
                             Message</button>
                     </div>
                 </div>
